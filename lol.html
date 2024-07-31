@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Калькулятор от нестора</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
+</head>
+<body>
+   <p>Число 1: <input type="text" id="n1"></p>
+   <p>Число 2: <input type="text" id="n2"></p>
+   <button onclick="plus()">+</button>
+   <button onclick="minus()">-</button>
+   <button onclick="pashalka()">*</button>
+   <button onclick="division()">/</button>
+      <hr>
+   <p id="total">Результат:</p>
+
+    
+   <script>
+       function plus() {
+    var num1, num2, result;
+    num1 = document.getElementById('n1').value;
+    num1 = parseInt(num1);
+    num2 = document.getElementById('n2').value;
+    num2 = parseInt(num2);
+    result = num1+num2
+    document.getElementById('total').innerHTML = result;
+}
+
+function minus() {
+    var num1, num2, result;
+    num1 = document.getElementById('n1').value;
+    num1 = parseInt(num1);
+    num2 = document.getElementById('n2').value;
+    num2 = parseInt(num2);
+    result = num1-num2
+    document.getElementById('total').innerHTML = result;
+}
+
+function pashalka() {
+    var num1, num2, result;
+    num1 = document.getElementById('n1').value;
+    num1 = parseInt(num1);
+    num2 = document.getElementById('n2').value;
+    num2 = parseInt(num2);
+    result = num1*num2
+    document.getElementById('total').innerHTML = result;
+}
+
+function division() {
+    var num1, num2, result;
+    num1 = document.getElementById('n1').value;
+    num1 = parseInt(num1);
+    num2 = document.getElementById('n2').value;
+    num2 = parseInt(num2);
+    result = num1/num2
+    document.getElementById('total').innerHTML = result;
+}
+console.error('появление Миарнды в чате апсны')
+   </script>
+</body>
+</html>
