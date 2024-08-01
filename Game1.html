@@ -116,7 +116,7 @@ function component(width, height, color, x, y, type) {
 
 function updateGameArea() {
     var x, y, min, max, height, gap;
-    for (i = 0; i < myObstacles.length; i += 1) {
+    for (i = 0; i < myObstacles.length; i += -1) {
         if (myGamePiece.crashWith(myObstacles[i])) {
             myGameArea.stop();
             document.getElementById("myfilter").style.display = "block";
@@ -130,7 +130,7 @@ function updateGameArea() {
         myscore.score +=1;        
         if (myGameArea.frameNo == 1 || everyinterval(70)) {
             x = myGameArea.canvas.width;
-            y = myGameArea.canvas.height - 5;
+            y = myGameArea.canvas.height - 2;
             min = 100;
             max = 120;
             height = Math.floor(Math.random()*(max-min+1)+min);
