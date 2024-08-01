@@ -124,20 +124,16 @@ function updateGameArea() {
             return;
         } 
     }
-    if (myGameArea.pause == false) {
-        myGameArea.clear();
-        myGameArea.frameNo += 1;
-        myscore.score +=1;        
-        if (myGameArea.frameNo == 1 || everyinterval(20)) {
+           if (myGameArea.frameNo == 1 || everyinterval(70)) {
             x = myGameArea.canvas.width;
-            y = myGameArea.canvas.height - 1;
-            min = 20;
-            max = 80;
+            y = myGameArea.canvas.height - 2;
+            min = 100;
+            max = 120;
             height = Math.floor(Math.random()*(max-min+1)+min);
-            min = 50;
+            min = -50;
             max = 80;
             gap = Math.floor(Math.random()*(max-min+1)+min);
-            myObstacles.push(new component(10, height, "green", x, 10)); 
+            myObstacles.push(new component(10, height, "green", x, -70));
             myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
         }
         for (i = 0; i < myObstacles.length; i += 1) {
