@@ -117,23 +117,20 @@ function component(width, height, color, x, y, type) {
 function updateGameArea() {
     var x, y, min, max, height, gap;
     for (i = 0; i < myObstacles.length; i += 1) {
-        if (myGamePiece.crashWith(myObstacles[i])) {
-            myGameArea.stop();
-            document.getElementById("myfilter").style.display = "block";
-            document.getElementById("myrestartbutton").style.display = "block";
-            return;
-        } 
-    }
-        if (myGameArea.frameNo == 1 || everyinterval(70)) {
+if (myGameArea.pause == false) {
+        myGameArea.clear();
+        myGameArea.frameNo += 1;
+        myscore.score +=1;        
+        if (myGameArea.frameNo == 1 || everyinterval(20)) {
             x = myGameArea.canvas.width;
             y = myGameArea.canvas.height - 1;
-            min = 100;
-            max = 120;
+            min = 20;
+            max = 80;
             height = Math.floor(Math.random()*(max-min+1)+min);
-            min = -50;
+            min = 50;
             max = 80;
             gap = Math.floor(Math.random()*(max-min+1)+min);
-            myObstacles.push(new component(10, height, "green", x, -70));
+            myObstacles.push(new component(10, height, "green", x, 10)); 
             myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
         }
         for (i = 0; i < myObstacles.length; i += 1) {
