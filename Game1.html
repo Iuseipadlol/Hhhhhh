@@ -127,9 +127,8 @@ function updateGameArea() {
     if (myGameArea.pause == false) {
         myGameArea.clear();
         myGameArea.frameNo += 1;
-        myscore.score +=1;      
-        }
-    if (myGameArea.frameNo == 1 || everyinterval(20)) {
+        myscore.score +=1;        
+        if (myGameArea.frameNo == 1 || everyinterval(20)) {
             x = myGameArea.canvas.width;
             y = myGameArea.canvas.height - 1;
             min = 20;
@@ -140,9 +139,9 @@ function updateGameArea() {
             gap = Math.floor(Math.random()*(max-min+1)+min);
             myObstacles.push(new component(10, height, "green", x, 10)); 
             myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
-    }
+        }
         for (i = 0; i < myObstacles.length; i += 1) {
-            myObstacles[i].x += -2;
+            myObstacles[i].x += -7;
             myObstacles[i].update();
         }
         myscore.text="SCORE: " + myscore.score;        
@@ -202,3 +201,9 @@ if (event.target.className.includes('no-select')) {
 <style>
     .no-select {
   -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+  user-select: none; /* Стандартный синтаксис */
+}
+</style>
+</body>
