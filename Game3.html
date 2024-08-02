@@ -24,8 +24,8 @@ body{
 <br>
 <div style="text-align:center;width:320px;">
   <button style="width:200px;height:100px;left:-300px" ontouchstart="moveup()" onmousedown="moveup()" onmouseup="clearmove()" class="no-select">UP</button><br><br>
-  <button style="width:200px;height:100px;border-right:none" ontouchstart="moveleft()" onmousedown="moveleft()" onmouseup="clearmove()">LEFT</button> 
-  <button style="width:200px;height:100px;border-right:none" ontouchstart="moveright()" onmousedown="moveright()" onmouseup="clearmove()">RIGHT</button><br><br>
+  <button class="btn-group" style="width:200px;height:100px;border-right:none" ontouchstart="moveleft()" onmousedown="moveleft()" onmouseup="clearmove()">LEFT</button> 
+  <button class="btn-group" style="width:200px;height:100px;border-right:none" ontouchstart="moveright()" onmousedown="moveright()" onmouseup="clearmove()">RIGHT</button><br><br>
   <button style="width:200px;height:100px" ontouchstart="movedown()" onmousedown="movedown()" onmouseup="clearmove()">DOWN</button>
 </div>
 <br>
@@ -207,6 +207,27 @@ if (event.target.className.includes('no-select')) {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE/Edge */
   user-select: none; /* Стандартный синтаксис */
+}
+</style>
+
+<style>
+.btn-group .button {
+    background-color: #4CAF50; /* Green */
+    border: 1px solid green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+}
+.btn-group .button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+.btn-group .button:hover {
+    background-color: #3e8e41;
 }
 </style>
 </body>
