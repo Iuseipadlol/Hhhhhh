@@ -43,6 +43,9 @@ body{
 <button onclick="saidishak()">blue</button>
 <button onclick="saidniger()">red</button>
 <button onclick="saidmoyrad()">green</button>
+<button onclick="saidtvar()">Yellow</button>
+<button onclick="saidchort()">purple</button>
+<button onclick="saidlox()">white</button>
 <script>
 
 
@@ -80,6 +83,33 @@ function saidniger() {
 function saidmoyrad() {
     myGamePiece = new component(30, 30, "green", 110, 75);
 }
+
+
+function saidtvar() {
+    myGamePiece = new component(30, 30, "yellow", 110, 75);
+}
+
+function saidchort() {
+    myGamePiece = new component(30, 30, "purple", 110, 75);
+}
+function saidlox() {
+    myGamePiece = new component(30, 30, "white", 110, 75);
+}
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+
 function gamearea() {
     this.canvas = document.createElement("canvas");
     this.canvas.width = 320;
