@@ -38,7 +38,13 @@ body{
        padding-left:70%;
     }
 </style>
+
+<h3>choose color</h3>
+<button class="saidishak()">blue</button>
+<button class="saidniger()">red</button>
+<button class="saidmoyrad()">green</button>
 <script>
+
 
 var myGameArea;
 var myGamePiece;
@@ -64,7 +70,9 @@ function startGame() {
     myscore = new component("15px", "Consolas", "white", 220, 25, "text");
     myGameArea.start();
 }
-
+function saidishak() {
+    myGamePiece = component(30, 30, "blue", 110, 75);
+}
 function gamearea() {
     this.canvas = document.createElement("canvas");
     this.canvas.width = 320;
