@@ -216,21 +216,6 @@ function updateGameArea() {
 
 
 function lukaniger() {
-
-        myGameArea.clear();
-        myGameArea.frameNo += 1;
-        myscore.score +=1;        
-        if (myGameArea.frameNo == 1 || everyinterval(25)) {
-            x = myGameArea.canvas.width;
-            y = myGameArea.canvas.height - 1;
-            min = 20;
-            max = 80;
-            height = Math.floor(Math.random()*(max-min+1)+min);
-            min = 50;
-            max = 80;
-            gap = Math.floor(Math.random()*(max-min+1)+min);
-            myObstacles.push(new component(10, height, "blue", x, 10));
-            myObstacles.push(new component(10, x - height - gap, "blue", x, height + gap));
 }
 
 
