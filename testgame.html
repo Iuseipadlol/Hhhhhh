@@ -29,13 +29,21 @@ body{
 </div>
 <br>
  
-<h3 style="background-color:white">choose color</h3>
+<h3 style="background-color:white">choose color cub</h3>
 <button onclick="saidishak()">blue</button>
 <button onclick="saidniger()">red</button>
 <button onclick="saidmoyrad()">green</button>
 <button onclick="saidtvar()">Yellow</button>
 <button onclick="saidchort()">purple</button>
 <button onclick="saidlox()">white</button> 
+
+<h3 style="background-color:white">choose color </h3>
+<button onclick="lukaniger()">blue</button>
+<button onclick="lukaishak()">red</button>
+<button onclick="lukamoyrad()">green</button>
+<button onclick="lukatvar()">Yellow</button>
+<button onclick="lukachort()">purple</button>
+<button onclick="lukalox()">white</button> 
 
 
 
@@ -207,8 +215,10 @@ function updateGameArea() {
 
 
 
-
-
+function lukaniger() {
+            myObstacles.push(new component(10, height, "blue", x, 10));
+            myObstacles.push(new component(10, x - height - gap, "blue", x, height + gap));
+}
 
 
 function everyinterval(n) {
