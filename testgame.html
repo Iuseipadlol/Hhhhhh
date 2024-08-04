@@ -246,9 +246,12 @@ function clearmove(e) {
     myGamePiece.speedY = 0; 
 }
 
-document.onkeydown = function (event) {
+document.onkeydup = function (event) {
     if (event.code == "KeyW") {
         myGamePiece.speedY = -2; 
+    }
+    if (event.code == "KeyS") {
+        myGamePiece.speedY = 2; 
     }
 }
 
