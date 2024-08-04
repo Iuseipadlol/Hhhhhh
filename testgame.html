@@ -257,7 +257,10 @@ document.onkeydown = function (event) {
     }
 }
 document.onkeyup = function (event) {
-    event.code.KeyW = return
+        if (event.code == "KeyW") {
+        return true
+    }
+
 }
 
 
