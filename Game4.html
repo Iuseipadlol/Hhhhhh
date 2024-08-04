@@ -197,6 +197,26 @@ function updateGameArea() {
     }
 }
 
+document.onkeydown = function (event) {
+    if (event.code == "KeyW") {
+        myGamePiece.speedY = -2; 
+    }
+
+
+    if (event.code == "KeyS") {
+        myGamePiece.speedY = 2; 
+    }
+}
+document.onkeyup = function (event) {
+        if (event.code == "KeyW") {
+         myGamePiece.speedY = -0;
+    }
+        if (event.code == "KeyS") {
+         myGamePiece.speedY = -0;
+    }
+
+}
+
 
 
 
