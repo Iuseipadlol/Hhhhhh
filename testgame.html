@@ -250,6 +250,12 @@ document.onkeydown = function (event) {
         myGamePiece.speedY = -2; 
     }
 }
+document.onkeydown = function (event) {
+    if (event.code == "KeyW") {
+        myGamePiece.speedY = 2; 
+    }
+}
+
     
 startGame();
 
