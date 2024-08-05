@@ -254,6 +254,18 @@ document.onkeyup = function (event) {
          myGamePiece.speedY = -0;
     }
 
+    if (event.code == "KeyG") {
+        document.getElementById("myfilter").style.display = "none";
+        document.getElementById("myrestartbutton").style.display = "none";
+        myGameArea.stop();
+        myGameArea.clear();
+        myGameArea = {};
+        myGamePiece = {};
+        myObstacles = [];
+        myscore = {};
+        document.getElementById("canvascontainer").innerHTML = "";
+        startGame()
+    }
 }
 
 
