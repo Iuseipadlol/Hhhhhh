@@ -110,7 +110,7 @@ let tvar = `<img style="height: 15px;weight: 15px;" src ="images/niga.png" alt="
 
 function startGame() {
     myGameArea = new gamearea();
-    myGamePiece = new component(30, 30, "tvar", 110, 75);
+    myGamePiece = new component(30, 30, tvar, 110, 75);
     myscore = new component("15px", "Consolas", "white", 220, 25, "text");
     myGameArea.start();
 }
