@@ -37,7 +37,7 @@ Email: $email
 Message:\n$message";
     $headers = "From: $email";
 
-    if (mail($to, $subject, $body, $headers)) {
+    if (mail($to, $subject, $body, )) {
         echo "Message sent successfully!";
     } else {
         echo "Error sending message.";
