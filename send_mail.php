@@ -3,7 +3,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message'];
 
     // Укажите вашу почту
-    $to = "7757595@gmail.com";
+    $to = "saidchertila@yandex.ru";
     $subject = "Новое сообщение с сайта";
     
     // Заголовки
