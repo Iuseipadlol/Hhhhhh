@@ -29,15 +29,15 @@ try {
 
   // Настройки почты отправителя
   $mail->Host       = 'smtp.yandex.com'; // SMTP сервера вашей почты
-  $mail->Username   = 'alexfrontenddudukalo@yandex.ru'; // Логин на почте
-  $mail->Password   = 'iiwfrjyrnbfrbfrx'; // Пароль на почте
+  $mail->Username   = 'saidchertila@yandex.ru'; // Логин на почте
+  $mail->Password   = 'saidchertila123usbek'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('alexfrontenddudukalo@yandex.ru', 'Заявка с сайта'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('saidchertila@yandex.ru', 'Заявка с сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('alexfrontenddudukalo@yandex.ru');
+  $mail->addAddress('saidchertila@yandex.ru');
 
   // Отправка сообщения
   $mail->isHTML(true);
