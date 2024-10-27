@@ -8,7 +8,7 @@ body {
     justify-content: flex-start; /* Верхнее выравнивание содержимого */
     height: 100vh; /* Высота экрана равна 100% */
     margin: 0; /* Убираем стандартные отступы */
-    padding-top: 40px; /* Отступ сверху для пространства */
+    padding-top: 29px; /* Отступ сверху для пространства */
 }
 
 /* Основной контейнер, объединяющий все элементы */
@@ -26,8 +26,8 @@ body {
 	padding: 40px;
 	border-radius: 8px;
 	text-align: center;
-	width: 350px;
-	margin-bottom: 20px;
+	width: 292px;
+	margin-bottom: -7px;
 }
 
 /* Логотип Instagram */
@@ -49,7 +49,7 @@ input {
     margin-bottom: 10px; /* Отступ снизу между полями */
     border: 1px solid #dbdbdb; /* Серый бордюр полей */
     border-radius: 4px; /* Скругленные углы полей */
-    font-size: 16px; /* Размер шрифта */
+    font-size: 12px; /* Размер шрифта */
 }
 
 /* Стили для кнопки отправки формы (логин) */
